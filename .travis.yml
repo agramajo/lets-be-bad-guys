@@ -1,0 +1,11 @@
+language: python
+python: 3.6
+dist: trusty
+
+addons:
+  sonarcloud:
+    organization: "agramajo"
+    token: $TOKEN     
+
+script:
+  - sonar-scanner
